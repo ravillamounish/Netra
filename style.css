@@ -37,9 +37,7 @@ button{
 .brand{
     display: flex;
     gap: 12px;
-    align-items: center;
-}
-.brand-logo{
+    align-items: cent .brand-logo{
     background: rgb(255, 255, 255);
     color: rgb(32, 36, 40);
     border-radius: 10px;
@@ -70,5 +68,5 @@ nav a:hover{
 
 .header-right,
 .header-right * {
-    color: #4ADE80;
+    color: #4ade80;
 }
