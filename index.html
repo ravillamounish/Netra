@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NETRA ROVER MONITORING SYSTEM</title>
+    <title>NETRA-ROVER MONITORING SYSTEM</title>
     <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="/script.js"></script>
 </head>
 <body>
     <header class="topbar">
@@ -13,24 +14,58 @@
             <div class="brand-logo">N</div>
             <div>
                 <h1>NETRA</h1>
-                 <p>ROBOT MISSION CONTROL</p>
+                <p>ROBOT MISSION CONTROL</p>
             </div>
         </div>
-        <!-- This is for navigation -->
-         <nav>
+
+        <!-- This block for navigation section -->
+        <nav>
             <a href="#Dashboard">Dashboard</a>
             <a href="#Fleet">Fleet</a>
             <a href="#Telemetry">Telemetry</a>
             <a href="#Alerts">Alerts</a>
-         </nav>
-         <!--This Displays System status and Live time -->
-          <div class="header-right">
-            <span class="online dot"></span>
-            <span>⬤ SYSTEM ONLINE</span>
+        </nav>
+
+        <!-- This block shows the system online, timing -->
+        <div class="header-right">
+            <span class="online-dot"></span>
+            <span>SYSTEM ONLINE</span>
             <strong id="clock">--:--:--</strong>
-          </div>
-          <!-- This is for opening dispatch button -->
-           <button id="dispatch-open" type="button">+Dispatch Misson</button> 
+        </div>
+
+        <!-- This is for dispatch mission button -->
+        <button id="dispatch-open" type="button">+Dispatch Mission</button>
+
     </header>
+    <!-- This is main section -->
+     <main class="page">
+        <section class="kpi-grid">
+            <article class="kpi-card">
+                <span>ROVERS ONLINE</span>
+                <h1 id="online-count">6/6</h1>
+                <p>Active Rover Units</p>
+            </article>
+         <article class="kpi-card">
+                <span>AVERAGE BATTERY</span>
+                <h1 id="average-battery">46%</h1>
+                <p>Requires Attention</p>
+            </article>
+         <article class="kpi-card">
+                <span>OPEN ALERTS</span>
+                <h1 id="alert-count">1</h1>
+                <p>Requires Attention</p>
+            </article>
+         <article class="kpi-card">
+                <span>DISTANCE TODAY</span>
+                <h1 id="online-count">6.8km</h1>
+                <p>Total simulated distance</p>
+            </article>
+        </section>
+     </main>
+    
+   
+
+   
+    
 </body>
 </html>
